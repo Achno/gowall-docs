@@ -38,13 +38,10 @@ All themes can be shown (both default and user-created via `~/.config/gowall/con
 
 <br />
 
-### Community Themes 🌐
-
-Themes that were requested by the community and added to `gowall`
-
-- **Srcery**
 
 ## Create your own Theme 
+
+![Custom themes example](../static/img/custom.png)
 
 Step 1. Create the directory and file : `~/.config/gowall/config.yml`
 
@@ -93,6 +90,11 @@ Notes 🗒️ :
 - Duplicate theme names will not be loaded
 :::
 
+### Community Themes 🌐
+
+Themes that were requested by the community and added to `gowall`
+
+- **Srcery**
 
 ## List all Themes & all colors of the Theme
 

@@ -27,8 +27,9 @@ to a catppuccin theme and boom! looking good in my signature yellow-catpuccin th
 
 ![invert colors](./img/invert.png)
 
-\
-\
+
+<br />
+
 
 ### More Visual Examples
 

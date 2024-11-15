@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Convert Wallpaper's Theme
 
-1.  `Singe conversion`
+ ➤ `Singe conversion`
 
 Convert any image to your favourite color scheme. Do `gowall list` for a list of available themes
 
@@ -20,10 +20,9 @@ Notes 🗒️ :
 - `gowall list` shows the 25 built in themes along with any custom theme you created in `~/.config/gowall/config.yml`
 :::
 
-\
-\
+<br />
 
-2. `Batch conversion`
+ ➤ `Batch conversion`
 
 Processes more than 1 image at a time.
 
@@ -32,9 +31,10 @@ Processes more than 1 image at a time.
    ```
 ⚠️ Do not leave any white spaces between the comma `,`
 
-\
-\
-3. `Convert a whole Directory`
+<br />
+
+
+ ➤ `Convert a whole Directory`
 
    Use the `#` delimiter to convert every image file under that directory.
    

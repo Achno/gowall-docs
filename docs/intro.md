@@ -19,8 +19,9 @@ From then gowall has come a long way and i have transformed it to a tool that ha
 
 | Feature                            | Explanation                                                                                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Convert a Wallpaper's theme        | Transforms the color scheme of the image to your favorite theme (catppuccin, everforest, tokyo...) to match your system's theme |
+| Convert a Wallpaper's theme (`v.0.2.0` improvements 👾)       | Transforms the color scheme of the image to your favorite theme (catppuccin, everforest, tokyo...) to match your system's theme|
 | Convert an image to pixel art      | Transforms your image to the typical blocky appearance of pixel art                                                        |
+| Image Upscaling with AI            | Increase the resolution of the image while preserving or improving its quality |
 | Change Image format                | Change format from `.webp` to `.png`, for example                                                                          |
 | Invert image colors                | Flips the colors of an image (a very underrated feature)                                                                   |
 | Replace a specific color in an image | Changes a specific color in the image to another                                                                          |

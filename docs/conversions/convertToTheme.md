@@ -22,6 +22,7 @@ Notes 🗒️ :
 :::info
 - `path/to/img.png` does not have to be an absolute path. You can use a relative path with the `~` ex. `~/Pictures/img.png` 
 - `gowall list` shows the 25 built in themes along with any custom theme you created in `~/.config/gowall/config.yml`
+- `-t` accepts a `.json` file with hex colors in the runtime see more info [here](../scripts.md#load-a-theme-dynamically-in-the-runtime-via-json-file)
 :::
 
 <br />

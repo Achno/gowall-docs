@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Image Upscaling (Neural Networks)
+# AI Image Upscaling (Neural Networks)
 
 
 ➤ Image upscaling increases the `resolution` of the image (makes it bigger) while preserving or enhancing its `quality`. 
@@ -57,7 +57,7 @@ Though i really recommend against doing that, your GPU will be looking at you in
 ## Deblur Image
 
 The models that are provided are really decent at deblurring images in anime style like the one below.
-
+Though i don't really recommend using it for this purpose.
 ![deblur example](../static/img/upsc2.png)
 
 ## Warning & Known Issues

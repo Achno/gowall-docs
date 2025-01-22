@@ -34,9 +34,15 @@ From then gowall has come a long way and i have transformed it to a tool that ha
 
 ## Image preview
 
-Gowall  supports  `image preview`  by printing the image on the terminal on `kitty`. If you are running on an terminal emulator other than kitty it will just open your default image viewing application no matter the operating system. 
+Gowall  supports  `image preview`  by printing the image on the following terminals. 
+- Kitty
+- Ghostty ( `v.0.2.0` and up)
+- Konsole ( `v.0.2.0` and up)
+- Wezterm (Soon)
 
-`Image preview` is `ON` by default. You can disable it by adding the following inside your `~/.config/gowall/config.yml` : 
+ All of the above require the <u>**kitten** binary </u> to be installed.The easiest way to get that binary is just by installing [Kitty](https://github.com/kovidgoyal/kitty), once you have that you can use Image preview in any of the above terminals. If you are running on an <u>terminal emulator other the ones above</u> it will just **open your default image viewing application no matter the operating system**. 
+
+`Image preview` is `ON` by default. You can disable it by adding the following inside your `~/.config/gowall/config.yml` 
 
    ```yaml title="~/.config/gowall/config.yml"
    EnableImagePreviewing: false

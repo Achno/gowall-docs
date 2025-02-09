@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ### Arch linux - AUR
 
-```
+```bash
 yay -S gowall
 ```
 ### NixOS - ( Maintainer : [Emily Trau](https://github.com/emilytrau) )
@@ -17,6 +17,13 @@ yay -S gowall
   ];
 ```
 More installation options : [here](https://search.nixos.org/packages?channel=24.05&from=0&size=50&sort=relevance&type=packages&query=gowall)
+
+### Fedora - COPR
+
+```bash
+sudo dnf copr enable achno/gowall
+sudo dnf install gowall
+```
 
 ### Void Linux - XBPS-SRC ( Maintainer : [elbachir-one](https://github.com/elbachir-one/)  ) 
 

@@ -38,15 +38,29 @@ Gowall  supports  `image preview`  by printing the image on the following termin
 - Kitty
 - Ghostty ( `v.0.2.0` and up)
 - Konsole ( `v.0.2.0` and up)
-- Wezterm (Soon)
+- Wezterm (Available in the main branch)
 
- All of the above require the <u>**kitten** binary </u> to be installed.The easiest way to get that binary is just by installing [Kitty](https://github.com/kovidgoyal/kitty), once you have that you can use Image preview in any of the above terminals. If you are running on an <u>terminal emulator other the ones above</u> it will just **open your default image viewing application no matter the operating system**. 
+ All of the above (except Wezterm) require the <u>**kitten** binary </u> to be installed.The easiest way to get that binary is just by installing [Kitty](https://github.com/kovidgoyal/kitty), once you have that you can use Image preview in any of the above terminals. If you are running on an <u>terminal emulator other the ones above</u> it will just **open your default image viewing application no matter the operating system**. 
 
 `Image preview` is `ON` by default. You can disable it by adding the following inside your `~/.config/gowall/config.yml` 
 
    ```yaml title="~/.config/gowall/config.yml"
    EnableImagePreviewing: false
    ```
+For Wezterm your `.wezterm.lua` config shoud have these options enabled : 
+```lua
+local wezterm = require 'wezterm'
+
+local config = wezterm.config_builder()
+
+config = {
+  enable_kitty_keyboard = true,
+  enable_kitty_graphics = true,  
+}
+
+return config
+```
+
 ## Shell completions
 
 ### What are completions?

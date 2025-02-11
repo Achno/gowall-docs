@@ -1,7 +1,7 @@
 # Use gowall in Scripts
 
 :::danger IMPORTANT
-All the commands of this section are available in version `v.0.2.0` and above. ( `v.0.2.0` will be released in 8-9/2/2025 dd/mm/yyyy) 
+All the commands of this section are available in version `v.0.2.0` and above. 
 :::
 
 ### Preview all of the 25 built in Themes

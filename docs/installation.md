@@ -4,6 +4,12 @@ sidebar_position: 2
 
 # Installation
 
+### MacOS 
+
+```
+brew install gowall
+```
+
 ### Arch linux - AUR
 
 ```bash

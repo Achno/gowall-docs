@@ -9,8 +9,7 @@ sidebar_position: 1
 
 Gowall is a CLI and started as a way to convert images ( specifically wallpapers ) to your favourite color scheme ex. catppuccin,everforest,solarized ...  
 
-From then gowall has come a long way and i have transformed it to a tool that has a lot more cool image processing capabilities.
-
+Since then, Gowall has evolved significantly, and I’ve transformed it into a versatile Swiss Army knife for a variety of cool image processing tasks.
 
 
 ## Gowall's Features explained quickly
@@ -24,6 +23,8 @@ From then gowall has come a long way and i have transformed it to a tool that ha
 | Image Upscaling with AI            | Increase the resolution of the image while preserving or improving its quality |
 | Change Image format                | Change format from `.webp` to `.png`, for example                                                                          |
 | Invert image colors                | Flips the colors of an image (a very underrated feature)                                                                   |
+| Effects                            | Mirror,Flip,Grayscale,change brightness and more to come! |
+| Create a gif from images           | use the images as frames and specify a delay and the number of loops |
 | Replace a specific color in an image | Changes a specific color in the image to another                                                                          |
 | Extract the color palette          | Finds the dominant or all colors in an image (similar to pywal)                                                            |
 | Draw on the Image                  | Draw borders, shapes, and effects                                                                                          |

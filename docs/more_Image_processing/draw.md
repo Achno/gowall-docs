@@ -16,10 +16,6 @@
     ```
 ![border](./img/border.png)
 
-<br />
-## Add effects
-
-Under construction...🔨 (Next update?) 
 
 <br />
 ## Create Solid color & Gradient Images

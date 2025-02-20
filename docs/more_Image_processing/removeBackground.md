@@ -1,6 +1,6 @@
 # Remove Background of an Image
 
-Remove the background of an image (Experimental! ***v1.9***).  
+Remove the background of an image 
 
     ```bash
     gowall bg ~/Pictures/img.png
@@ -25,5 +25,5 @@ You also have a bunch of options to play around with for more control.
 
 You can combine them together to control the parameters of the background removal.
 ```bash
-    gowall bg ~/Pictures/img.png -r 10 -s 0.8
+gowall bg ~/Pictures/img.png -r 10 -s 0.8
 ```

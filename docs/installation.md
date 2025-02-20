@@ -6,6 +6,7 @@ sidebar_position: 2
 
 ### MacOS 
 
+A special thank you to `chenrui333` for making this possible.
 ```
 brew install gowall
 ```

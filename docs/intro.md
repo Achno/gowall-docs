@@ -7,50 +7,51 @@ sidebar_position: 1
 
 ## What is gowall?
 
-Gowall is a CLI and started as a way to convert images ( specifically wallpapers ) to your favourite color scheme ex. catppuccin,everforest,solarized ...  
+Gowall is a CLI and started as a way to convert images ( specifically wallpapers ) to your favourite color scheme ex. catppuccin,everforest,solarized ...  Since then, Gowall has evolved significantly, and I’ve transformed it into a versatile Swiss Army knife for a variety of cool image processing tasks.
 
-Since then, Gowall has evolved significantly, and I’ve transformed it into a versatile Swiss Army knife for a variety of cool image processing tasks.
 
 
 ## Gowall's Features explained quickly
 
-❗ Gowall although a CLI has an `Image preview` feature, you can see the next section for more information.
+❗ Gowall although a CLI has an `Terminal Image preview` feature, you can see the next section for more information.
 
-| Feature                            | Explanation                                                                                                                |
-|------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Convert a Wallpaper's theme (`v.0.2.0` improvements 👾)       | Transforms the color scheme of the image to your favorite theme (catppuccin, everforest, tokyo...) to match your system's theme|
-| Convert an image to pixel art      | Transforms your image to the typical blocky appearance of pixel art                                                        |
-| Image Upscaling with AI            | Increase the resolution of the image while preserving or improving its quality |
-| Change Image format                | Change format from `.webp` to `.png`, for example                                                                          |
-| Invert image colors                | Flips the colors of an image (a very underrated feature)                                                                   |
-| Effects                            | Mirror,Flip,Grayscale,change brightness and more to come! |
-| Create a gif from images           | use the images as frames and specify a delay and the number of loops |
-| Replace a specific color in an image | Changes a specific color in the image to another                                                                          |
-| Extract the color palette          | Finds the dominant or all colors in an image (similar to pywal)                                                            |
-| Draw on the Image                  | Draw borders, shapes, and effects                                                                                          |
-| Remove the background of the image | Removes the background from an image                                                                                       |
-| Daily wallpapers                   | Explore community-voted wallpapers that reset daily                                                                        |
-
-
+- Convert Wallpaper's theme 👾 – Recolor an image to match your favorite + (Custom) themes (Catppuccin...)
+- AI Image Upscaling  - Increase the resolution of the image while preserving or improving its quality.
+- Support for Unix pipes/redirection - Read from `stdin` and write to `stdout`
+- Convert Icon's theme (svg,ico) - Recolor your icons to match a theme
+- Image to pixel art - Transforms your image to the typical blocky appearance of pixel art.
+- Replace a specific color in an image - pretty self explanatory.
+- Create a gif from images - use the images as frames and specify a delay and the number of loops.
+- Extact color palette - Extracts all the dominant colors in an image (like pywal)
+- Change Image format - Ex. change format from `.webp` to `.png`.
+- Invert image colors - pretty self explanatory.
+- Draw on the Image - Draw borders on the image
+- Remove the background of the image - pretty self explanatory.
+- Effects - Mirror,Flip,Grayscale,change brightness and more to come!
+- Daily wallpapers - Explore community-voted wallpapers that reset daily.
 
 ## Image preview
 
-Gowall  supports  `image preview`  by printing the image on the following terminals. 
-- Kitty
-- Ghostty ( `v.0.2.0` and up)
-- Konsole ( `v.0.2.0` and up)
-- Wezterm (Available in the main branch)
+![all of the different ways to use terminal image preview](../static/img/terminal.png)
 
- All of the above (except Wezterm) require the <u>**kitten** binary </u> to be installed.The easiest way to get that binary is just by installing [Kitty](https://github.com/kovidgoyal/kitty), once you have that you can use Image preview in any of the above terminals. If you are running on an <u>terminal emulator other the ones above</u> it will just **open your default image viewing application no matter the operating system**. 
+Gowall  supports  `image preview`  by printing the image on the following terminals, or opening your default image viewing app.
 
-`Image preview` is `ON` by default. You can disable it by adding the following inside your `~/.config/gowall/config.yml` 
+<details>
+  <summary><strong>Kitty</strong></summary>
 
-   ```yaml title="~/.config/gowall/config.yml"
-   EnableImagePreviewing: false
-   ```
-For Wezterm your `.wezterm.lua` config shoud have these options enabled : 
-```lua
-local wezterm = require 'wezterm'
+ ➤ Image previewing on Kitty works out of the box 0 dependencies.  
+
+ ➤ You can always install & use `chafa` if you like for a small increase in speed but worse resizing.  
+   Set `ImagePreviewBackend: "chafa"` inside `~/.config/gowall/config.yml`
+</details>
+
+<details>
+  <summary><strong>Wezterm</strong></summary>
+
+ ➤ Image previewing on Wezterm works out of the box 0 dependencies, just make sure that your `.wezterm.lua` has these settings:
+
+ ```lua
+ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
@@ -60,7 +61,40 @@ config = {
 }
 
 return config
-```
+ ```
+
+ ➤ You can always install & use `chafa` if you like for a small increase in speed but worse resizing.  
+   Set `ImagePreviewBackend: "chafa"` inside `~/.config/gowall/config.yml`
+</details>
+
+<details>
+  <summary><strong>Ghostty & Konsole</strong></summary>
+
+ ➤ Your first option is to have `kitty` installed alongside Ghostty/(Konsole). Then it will work out of the box.
+
+ ➤ Your second option **(0 dependencies)** is to just set `InlineImagePreview: true` since gowall supports the kitty protocol directly.
+
+ ➤ Your third option is to install & use `chafa` by setting `ImagePreviewBackend: "chafa"` inside `~/.config/gowall/config.yml`
+ 
+</details>
+
+
+<details>
+  <summary><strong>Terminals that don't support images (Alacritty) or those who use the Sixel Protocol</strong></summary>
+
+ ➤ If your terminal only supports `Sixel` your only option is to install & use `chafa` by setting `ImagePreviewBackend: "chafa"` inside `~/.config/gowall/config.yml`
+
+ ➤ If the terminal does not support images in any way like a certain someone (**Alacritty**) you have 2 options :
+  - Use `chafa` and get a very decent ASCII representation in the terminal. 
+  - Don't do anything and just let gowall open your `default image previewer on any operating system`. (See the image on the bottom right)
+ 
+</details>
+
+`Image preview` is `ON` by default. You can disable it by adding the following inside your `~/.config/gowall/config.yml` 
+
+   ```yaml title="~/.config/gowall/config.yml"
+   EnableImagePreviewing: false
+   ```
 
 ## Shell completions
 

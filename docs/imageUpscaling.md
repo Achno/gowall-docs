@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# AI Image Upscaling (Neural Networks)
+# AI Image Upscaling 
 
 
 ➤ Image upscaling increases the `resolution` of the image (makes it bigger) while preserving or enhancing its `quality`. 
@@ -59,6 +59,17 @@ Though i really recommend against doing that, your GPU will be looking at you in
 The models that are provided are really decent at deblurring images in anime style like the one below.
 Though i don't really recommend using it for this purpose.
 ![deblur example](../static/img/upsc2.png)
+
+### ➤ `Batch & Directory conversion`
+
+```bash
+gowall upscale --batch img.png,img2.png
+gowall upscale --batch img.png,img2.png --output ~/NewFolder
+
+gowall upscale --dir ~/Pictures/Dir
+gowall upscale --dir ~/Pictures/Dir --output ~/NewFolder
+```
+
 
 ## Warning & Known Issues
 :::warning

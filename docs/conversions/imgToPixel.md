@@ -4,12 +4,13 @@ sidebar_position: 2
 
 # Convert Image to Pixel art
 
-1.  `Singe conversion`
+### ➤  `Singe conversion`
 
 Convert an image to pixel art by applying a pixelation effect.
 
   ```bash
-    gowall pixelate ~/Pictures/img.png -s 15
+gowall pixelate ~/Pictures/img.png -s 15
+gowall pixelate ~/Pictures/img.png -s 15 --output ~/NewFolder/newName.jpg
   ```
 
 The `-s` is the `scale` flag, an integer from [1-25]. The higher the number the less pixelated (blocky) the image is.
@@ -24,4 +25,16 @@ The higher resolution image you have, the lower the `scale` flag must be set.
 \
 ![Second img to pixel example](./img/pixel1.png)
 
+### ➤  `Batch conversion`
 
+```bash
+gowall pixelate --batch img1.png,img2.png -s 15
+gowall pixelate --batch img1.png,img2.png -s 15 --output ~/NewFolder
+```
+
+### ➤  `Directory conversion`
+
+  ```bash
+gowall pixelate --dir ~/Pictures/Dir1 -s 15
+gowall pixelate --dir ~/Pictures/Dir1 -s 15 --output ~/NewFolder
+  ```

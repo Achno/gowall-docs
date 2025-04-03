@@ -9,6 +9,7 @@ An example is the one below where the girl is looking on the left but when you f
 
 ```bash
 gowall effects flip ~/Pictures/girl.png
+gowall effects flip ~/Pictures/girl.png --output ~/NewFolder
 ```
 
 ![mirror-flip](./img/mirror-flip.png)
@@ -18,4 +19,19 @@ above. Notice how the clouds and rocks are symmetric?
 
 ```bash
 gowall effects mirror ~/Pictures/space.png
+gowall effects mirror ~/Pictures/space.png --output ~/NewFolder
+```
+
+### ➤  `Batch conversion`
+
+```bash
+gowall effects <effect> --batch girl.png,girl1.png 
+gowall effects <effect> --batch girl.png,girl1.png --output ~/NewFolder 
+```
+
+### ➤  `Directory conversion`
+
+```bash
+gowall effects <effect> --dir ~/Pictures/Dir
+gowall effects <effect> --dir ~/Pictures/Dir --output ~/NewFolder 
 ```

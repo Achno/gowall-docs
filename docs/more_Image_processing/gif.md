@@ -4,7 +4,8 @@
 If you dont specify any flags the defaults are set so it loops forever and it has a 2 second delay between frames.
 
 ```bash
-gowall gif -b ~/Pictures/NOBORDER.png,~/Pictures/girl.png 
+gowall gif --batch ~/Pictures/NOBORDER.png,~/Pictures/girl.png 
+gowall gif --batch ~/Pictures/NOBORDER.png,~/Pictures/girl.png --output ~/Pictures/gowall/gifs/name.gif
 ```
 :::note 
 Do not leave any spaces between the path to the images.The `-b` flag is necessary 
@@ -32,4 +33,23 @@ The `l` flag is used to specify the number of loops to show the frames of the gi
 
 ```bash
 gowall gif -b ~/Pictures/NOBORDER.png,~/Pictures/girl.png -l -1
+```
+
+### Disable Automatic resize of the Images
+
+If you know your images are all the same dimensions, you can gain a decent speed-up by just telling gowall
+that your images have the same dimensions and to not automatically resize them. Do that by setting `-r 0` which means turn off resizing
+
+```bash
+gowall gif --dir ~/Pictures/vtest -r 0 --output ~/Pictures/gowall/gifs/name.gif
+```
+
+If you see a `gif: image block is out of bounds` error though, that means that they aren't the same size 
+so remove that `-r 0`.
+
+### ➤  `Directory conversion`
+
+```bash
+gowall gif --dir ~/Pictures/Dir
+gowall gif --dir ~/Pictures/Dir --ouput ~/Pictures/gowall/gifs/name.gif
 ```

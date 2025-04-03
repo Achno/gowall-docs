@@ -1,13 +1,13 @@
 # Invert Colors
 
+### ➤  `Singe conversion`
+
 As the name suggests invert, inverts the colors of an image, ex. white --> black.
 
    ```bash
-    gowall invert path/to/img.png
-    gowall invert -b path/img.png,path/img2.png
-    gowall invert ~/Pictures/test/# 
+gowall invert path/to/img.png 
+gowall invert path/to/img.png --output ~/NewFolder/newname.png
    ```
-The `3rd` options inverts all images under the `~/Pictures/test` directory.
 
 ### Scenario where you want to use it
 Lets say you just did `gowall convert ~/img.png -t catppuccin` and you were not satisfied by the theme conversion.
@@ -26,6 +26,20 @@ Lets fix that 🔨.
 to a catppuccin theme and boom! looking good in my signature yellow-catpuccin theme :) 
 
 ![invert colors](./img/invert.png)
+
+### ➤  `Batch conversion`
+
+```bash
+gowall invert --batch img1.png,img2.png 
+gowall invert --batch img1.png,img2.png --output ~/NewFolder
+```
+
+### ➤  `Directory conversion`
+
+```bash
+gowall invert --dir ~/Pictures/Dir 
+gowall invert --dir ~/Pictures/Dir --output ~/NewFolder
+```
 
 
 <br />

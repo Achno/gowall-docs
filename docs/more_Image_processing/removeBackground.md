@@ -3,7 +3,8 @@
 Remove the background of an image 
 
     ```bash
-    gowall bg ~/Pictures/img.png
+gowall bg ~/Pictures/img.png
+gowall bg ~/Pictures/img.png --output ~/NewFolder/img2.png
     ``` 
 You also have a bunch of options to play around with for more control.
 
@@ -15,6 +16,21 @@ You also have a bunch of options to play around with for more control.
 ## Examples
 
 ![remove background](./img/bg.png)
+
+### ➤  `Batch conversion`
+
+    ```bash
+gowall bg --batch img.png,img2.png
+gowall bg --batch img.png,img2.png --output ~/NewFolder
+    ``` 
+
+
+### ➤  `Directory conversion`
+
+    ```bash
+gowall bg --dir ~/Pictures/Dir
+gowall bg --dir ~/Pictures/Dir --output ~/NewFolder
+    ``` 
 
 ## More control
 

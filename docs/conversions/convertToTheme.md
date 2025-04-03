@@ -4,17 +4,17 @@ sidebar_position: 1
 
 # Convert Wallpaper's Theme
 
-:::danger IMPORTANT
-(A new Algorithm is available `50%  faster` and far more `smooth` than the old one. Available in  Version `v.0.2.0`) : [click here](#new-algorithm-v020) to check out the differences. (It's the Default from `v.0.2.0` and onwards)
-:::
+ ### ➤ `Singe conversion` 
 
- ➤ `Singe conversion` 
-
-Convert any image to your favourite color scheme. Do `gowall list` for a list of available themes
+Convert any image to your favourite color scheme. Do `gowall list` for a list of available themes.  
+The folders with `--output` are automatically created for your convenience if they don't exist.
 
   ```bash
-    gowall convert path/to/img.png -t <theme-name>
-  ```
+gowall convert path/to/img.png -t <theme-name> # gets saved to `Pictures/gowall`(can be changed)
+gowall convert path/to/img.png -t catppuccin --output ~/NewFolder/newName.jpg
+gowall convert path/to/img.png -t catppuccin --output ~/NewFolder #you dont have to specify the name or ext
+ ```
+ 
 ![Singe conversion](./img/catppuccin.png)
 
 Notes 🗒️ :
@@ -27,28 +27,27 @@ Notes 🗒️ :
 
 <br />
 
- ➤ `Batch conversion`
+### ➤ `Batch conversion`
 
 Processes more than 1 image at a time.
 
    ```bash
-     gowall convert -b path/img.png,path/im2.png -t <theme-name>
+gowall convert --batch img1.png,img2.png -t <theme-name> # saved to the default dir
+gowall convert --batch img1.png,img2.png -t <theme-name> --output ~/NewFolder
    ```
 ⚠️ Do not leave any white spaces between the comma `,`
 
 <br />
 
 
- ➤ `Convert a whole Directory`
+### ➤ `Convert a whole Directory`
 
    Use the `#` delimiter to convert every image file under that directory.
    
    ```bash
-    gowall convert ~/Pictures/# -t catppuccin
-
-    gowall invert ~/Pictures/test/# 
+gowall convert --dir ~/Pictures/Wallpapers -t catppuccin # saved to the default dir 
+gowall convert --dir ~/Pictures/Wallpapers -t catppuccin --output ~/NewFolderAutomaticallyCreated
    ```
-Notes 🗒️ :
 
 :::info
  Only `png` `jpeg` `jpg` `webp` images will be converted any other directory or  file will be ignored

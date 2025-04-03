@@ -1,14 +1,10 @@
 # Use gowall in Scripts
 
-:::danger IMPORTANT
-All the commands of this section are available in version `v.0.2.0` and above. 
-:::
-
 ### Preview all of the 25 built in Themes
 ----
 
 Lets say you want to see how the all of the colorschemes of the 25 built in themes look like on an image.
-We can easily do that with a small bash script and the `gowall convert path.png -t theme -o outputName` command.
+We can easily do that with a small bash script.
 
 ```bash
 
@@ -16,10 +12,10 @@ We can easily do that with a small bash script and the `gowall convert path.png 
 
 themes=$(gowall list)
 
-input_path="/home/achno/Pictures/NOBORDER.png"
+input_path="/home/<name>/Pictures/NOBORDER.png"
 
 while IFS= read -r theme; do
-  gowall convert "$input_path" -t "$theme" -o "$theme"
+  gowall convert "$input_path" -t "$theme" --output "/home/<name>/Pictures/gowall/Themetest/$theme"
 done <<< "$themes"
 ```
 

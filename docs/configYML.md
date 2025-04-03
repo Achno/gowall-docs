@@ -1,8 +1,11 @@
 # config.yml Options
 
    ```yaml title="~/.config/gowall/config.yml"
-   
    EnableImagePreviewing: true # default. Enables Image preview in your Terminal emulator (Kitty,Ghostty,Konosole,Wezterm)
+
+   InlineImagePreview: true # default is false. prints images in the terminal without 3rd party dependencies
+
+   ImagePreviewBackend: "chafa" # prints images in the terminal with chafa, if set
 
    OutputFolder: "MyImages" # default is "Pictures/gowall". Sets the gowall directory to `~/MyImages`. The folder will be created if it does not exist
    

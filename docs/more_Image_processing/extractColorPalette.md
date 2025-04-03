@@ -24,7 +24,18 @@ If your image consists of lets say 1 color (blue) and you try to extract more co
 then it will return the 1 true color (blue) and produce another 2 shades of blue.
 :::
 
-
 ## Examples
 
 ![extract example](./img/exctract.png)
+
+### ➤  `Batch conversion`
+
+```bash
+gowall extract --batch img1.png,img2.png -c 6
+```
+
+### ➤  `Directory conversion`
+
+```bash
+gowall extract --batch img1.png,img2.png -c 6
+```

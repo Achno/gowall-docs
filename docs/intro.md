@@ -25,7 +25,7 @@ Gowall is a CLI and started as a way to convert images ( specifically wallpapers
 - Extact color palette - Extracts all the dominant colors in an image (like pywal)
 - Change Image format - Ex. change format from `.webp` to `.png`.
 - Invert image colors - pretty self explanatory.
-- Draw on the Image - Draw borders on the image
+- Draw on the Image - Draw borders,grids on the image
 - Remove the background of the image - pretty self explanatory.
 - Effects - Mirror,Flip,Grayscale,change brightness and more to come!
 - Daily wallpapers - Explore community-voted wallpapers that reset daily.

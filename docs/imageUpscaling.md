@@ -75,6 +75,7 @@ gowall upscale --dir ~/Pictures/Dir --output ~/NewFolder
 :::warning
 - If you get a black image with red lines after a long time of processing then most likely your GPU does not support `Vulkan`.
 - This feature has not been tested on `MacOS`, do not be surprised if isn't working as expected.
+- NixOS does not support dynamically linked binaries so install the upscale binary from [here](https://search.nixos.org/packages?channel=unstable&show=realesrgan-ncnn-vulkan&from=0&size=50&sort=relevance&type=packages&query=realesrgan-ncnn-vulkan) and then gowall it detect it automatically.
 :::
 
 ## License

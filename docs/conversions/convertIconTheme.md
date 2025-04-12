@@ -1,5 +1,5 @@
 # Convert an Icons's Theme
-We will take advantage of gowall's support for `stdin` and `stdout`,familiarize yourself with how gowall does that before attempting this, check it out [here]
+We will take advantage of gowall's support for `stdin` and `stdout`,familiarize yourself with how gowall does that before attempting this, check it out [here](../unix_pipe.md)
 
 
 

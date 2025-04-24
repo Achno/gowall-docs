@@ -2,9 +2,11 @@
 sidebar_position: 2
 ---
 
+Make sure to do `gowall -v` and compare it against the release page version, since the docs only show the commands/flags and capabilities of the latest released version. You can find the **currently released version** [here](https://github.com/Achno/gowall/releases)
+
 # Installation
 
-### MacOS 
+### MacOS (currently behind on v0.2.0)
 
 A special thank you to `chenrui333` for making this possible.
 ```
@@ -44,7 +46,17 @@ cd void-packages/
 sudo xbps-install -R hostdir/binpkgs gowall
 ```
 
-### Build from source
+### Grab the binary from the release section (Stable Release)
+
+Head over to the [release section](https://github.com/Achno/gowall/releases)
+
+Choose the latest version of gowall. You should see a `.tar.gz` for your operating system and architecture. Simply Extract the binary inside and place it inside your `$PATH` 
+
+```
+sudo cp gowall /usr/local/bin/
+```
+
+### Build from source (Cutting Edge)
 
 🔨 Clone the repo, build the project and move it inside your `$PATH`
 

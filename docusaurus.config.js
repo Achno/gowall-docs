@@ -41,7 +41,10 @@ const config = {
           sidebarPath: './sidebars.js',
 
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          postsPerPage: 'ALL',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,6 +75,9 @@ const config = {
             alt: 'github Logo',
             className: 'header-github-link',
             position: 'right',
+          },
+          {
+            to: 'blog', label: 'Blog', position: 'left'
           },
         ],
       },
@@ -105,7 +111,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Achno',
               },
             ],
           },

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclassic=self.webpackChunkclassic||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/gowall-docs/blog","blogTitle":"Blog","authorsListPath":"/gowall-docs/blog/authors"}')}}]);

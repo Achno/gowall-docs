@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclassic=self.webpackChunkclassic||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Fedora COPR & gowall","permalink":"/gowall-docs/blog/Fedora-COPR-gowall","unlisted":false,"date":"2025-05-14T00:00:00.000Z"}]}')}}]);

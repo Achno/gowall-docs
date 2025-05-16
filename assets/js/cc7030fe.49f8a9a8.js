@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclassic=self.webpackChunkclassic||[]).push([[6798],{5153:l=>{l.exports=JSON.parse('{"tags":[{"label":"go","permalink":"/gowall-docs/blog/tags/go","count":1},{"label":"Fedora-COPR","permalink":"/gowall-docs/blog/tags/fedora-copr","count":1},{"label":"docker","permalink":"/gowall-docs/blog/tags/docker","count":1}]}')}}]);

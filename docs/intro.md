@@ -17,6 +17,8 @@ Gowall is a CLI and started as a way to convert images ( specifically wallpapers
 
 - Convert Wallpaper's theme 👾 – Recolor an image to match your favorite + (Custom) themes (Catppuccin...)
 - AI Image Upscaling  - Increase the resolution of the image while preserving or improving its quality.
+- Image compression - Reduce the size of png,jpeg,jpg,webp images.
+- OCR (Optical Character Recognition) - Extract text from images and pdfs', supporting a lot of providers.
 - Support for Unix pipes/redirection - Read from `stdin` and write to `stdout`
 - Convert Icon's theme (svg,ico) - Recolor your icons to match a theme
 - Image to pixel art - Transforms your image to the typical blocky appearance of pixel art.

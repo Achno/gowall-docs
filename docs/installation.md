@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
 ---
+# Installation
 
 Make sure to do `gowall -v` and compare it against the release page version, since the docs only show the commands/flags and capabilities of the latest released version. You can find the **currently released version** [here](https://github.com/Achno/gowall/releases)
 
-# Installation
 
 ### MacOS (currently behind on v0.2.0)
 
@@ -60,13 +60,38 @@ sudo cp gowall /usr/local/bin/
 
 🔨 Clone the repo, build the project and move it inside your `$PATH`
 
-```
+#### Linux & MacOS
+
+```bash
 git clone https://github.com/Achno/gowall
 cd gowall
-go build
+go build -v
 sudo cp gowall /usr/local/bin/
 gowall
 ```
+
+#### Windows 
+
+For Windows we need to install `zig` & `go` to build it. I advise you to use a package manager like `scoop` to install it. 
+
+```bash
+scoop install main/zig
+```
+
+```bash
+git clone https://github.com/Achno/gowall
+cd gowall
+
+export CGO_ENABLED=1 # if you are using powershell : $env:CGO_ENABLED=1
+export CC="zig cc" # if you are using powershell : $env:CC="zig cc"
+export CXX="zig c++" # if you are using powershell : $env:CXX="zig c++"
+
+go clean -cache 
+go build -v
+
+# then simply add the binary to your PATH
+```
+
 ### Go install
  if you have `$GOPATH` setup correctly Eg. you have the following in your .zshrc / .bashrc
 ```bash

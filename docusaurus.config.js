@@ -123,6 +123,12 @@ const config = {
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['bash'],
       },
+      announcementBar: {
+        id: 'release',
+        content: '🎉 Gowall v0.2.2 is out! New Features include : OCR & Image Compression check it out.',
+        backgroundColor: '#242526',
+        textColor: '#ffffff',
+      },
     }),
 };
 

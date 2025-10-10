@@ -2,11 +2,11 @@
 sidebar_position: 5
 ---
 
-# Image Compression
+# Image Compression (New)
 
 Image compression reduces the size of images  by reducing the amount of data required to represent the image while visually staying the same. Gowall  <u>supports `png`, `jpeg`, `jpg`, `webp` compression</u>.
 
-PHOTO HERE
+![](../static/img/compression.png)
 
 ### Lossy and Lossless Compression
 

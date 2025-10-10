@@ -6,6 +6,16 @@ sidebar_position: 2
 Make sure to do `gowall -v` and compare it against the release page version, since the docs only show the commands/flags and capabilities of the latest released version. You can find the **currently released version** [here](https://github.com/Achno/gowall/releases)
 
 
+### Grab the binary from the release section (Stable Release)
+
+Head over to the [release section](https://github.com/Achno/gowall/releases)
+
+Choose the latest version of gowall. You should see a `.tar.gz` for your operating system and architecture. Simply Extract the binary inside and place it inside your `$PATH` 
+
+```
+sudo cp gowall /usr/local/bin/
+```
+
 ### MacOS (currently behind on v0.2.0)
 
 A special thank you to `chenrui333` for making this possible.
@@ -46,15 +56,6 @@ cd void-packages/
 sudo xbps-install -R hostdir/binpkgs gowall
 ```
 
-### Grab the binary from the release section (Stable Release)
-
-Head over to the [release section](https://github.com/Achno/gowall/releases)
-
-Choose the latest version of gowall. You should see a `.tar.gz` for your operating system and architecture. Simply Extract the binary inside and place it inside your `$PATH` 
-
-```
-sudo cp gowall /usr/local/bin/
-```
 
 ### Build from source (Cutting Edge)
 
@@ -70,12 +71,12 @@ sudo cp gowall /usr/local/bin/
 gowall
 ```
 
-#### Windows 
+#### Windows (Or any OS if git cloning and go build did not work)
 
-For Windows we need to install `zig` & `go` to build it. I advise you to use a package manager like `scoop` to install it. 
+For Windows we need to install `zig` & `go` to build it. I advise you to use a package manager like [scoop](https://scoop.sh/) to install it. Obviously you can just go the zig website and download the installer, it doesn't really matter, the zig binary needs to be in your `$PATH`.
 
 ```bash
-scoop install main/zig
+scoop install main/zig # or just go to the website and download zig if you don't want to use a package manager
 ```
 
 ```bash

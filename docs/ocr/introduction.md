@@ -36,22 +36,22 @@ If i want to OCR something like a receipt or a pdf containing very sensitive inf
 
 > Not-LLM OCR based
 
-- [Tesseract](https://github.com/tesseract-ocr/tesseract) see the gowall tesseract guide [here]
-- [Docling](https://github.com/docling-project/docling) see the gowall Docling guide [here] (docling has both choices that's why it appears in 2 sections)
+- [Tesseract](https://github.com/tesseract-ocr/tesseract) see the gowall tesseract guide [here](./providers/tesseract.md)
+- [Docling](https://github.com/docling-project/docling) see the gowall Docling guide [here](./providers/docling.md) (docling has both choices that's why it appears in 2 sections)
 
 > LLM-OCR based
 
-- [VLLM](https://github.com/vllm-project/vllm) see the gowall VLLM guide [here]
-- [Ollama](https://github.com/ollama/ollama) see the gowall Ollama guide [here]
+- [VLLM](https://github.com/vllm-project/vllm) see the gowall VLLM guide [here](./providers/vllm.md)
+- [Ollama](https://github.com/ollama/ollama) see the gowall Ollama guide [here](./providers/ollama.md)
 - [Docling](https://github.com/docling-project/docling) see the gowall Docling guide [here] (docling has both choices that's why it appears in 2 sections)
-- <u>OC</u> every selfhosted OpenAI compatible API endpoint, see the gowall OC guide [here]
+- <u>OC</u> every selfhosted OpenAI compatible API endpoint, see the gowall OC guide [here](./providers/oc.md)
 
 ### Cloud based
 
-- [OpenAI](https://openai.com/) see the gowall OpenAI guide [here]
-- [OpenRouter](https://openrouter.ai/) see the gowall OpenRouter guide [here]
-- [Gemini](https://gemini.google.com/) see the gowall Gemini guide [here]
-- [Mistral](https://mistral.ai/) see the gowall Mistral guide [here]
+- [OpenAI](https://openai.com/) see the gowall OpenAI guide [here](./providers/openai.md)
+- [OpenRouter](https://openrouter.ai/) see the gowall OpenRouter guide [here](./providers/openrouter.md)
+- [Gemini](https://gemini.google.com/) see the gowall Gemini guide [here](./providers/gemini.md)
+- [Mistral](https://mistral.ai/) see the gowall Mistral guide [here](./providers/mistral.md)
 
 ## One Interface & Schemas
 
@@ -98,7 +98,7 @@ You can obviously overwrite anything with flags. The priority is always flags > 
 gowall ocr img.png -s op-qwen -m deepseek/deepseek-chat-v3.1:free
 ```
 There are a lot more options to add in a schema like configuring rate limiting, replacing/appending prompts, messing with concurrency per stage in pre/post processing ... you get it, **i have kept it very very simple here for demonstration purposes**.
-You can check the guide [here] for more info.
+You can check the guide [here](./schema.md) for more info.
 
 ## Rate-Limiting
 :::warning
@@ -138,16 +138,16 @@ Obviously you can set them in your `schema.yml` file as well.
         burst: 4
 ```
 
-You should check the rate limiting guide [here] for more info and examples, this is merely an introduction.
+You should check the rate limiting guide [here](./schema.md#rate-limitting) for more info and examples, this is merely an introduction.
 
 ## Pre-Processing
 
 When you feed gowall a pdf or an image it does some pre-processing to make it easier for a model to understand or lowering the image size (lower tokens, lower cost).
 
-You can play around with some options, see the pre-processing guide [here] for more info.
+You can play around with some options, see the pre-processing guide [here](./schema.md#pipeline-configs) for more info.
 
 ## Post-Processing
 
 When the provider OCR's the image/pdf gowall can perform post-processing. Right now there exists only `text correction` to essentially pair up tesseract with fast OCR and an llm that corrects grammar mistakes, closes brackets etc...
 
-You can play around with some options, see the post-processing guide [here] for more info.
+You can play around with some options, see the post-processing guide [here](./schema.md#text-correction) for more info.

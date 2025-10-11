@@ -6,7 +6,7 @@ sidebar_position: 1
 # Introduction
 
 
-Do you want to extract text from an image or pdf? Well great, as of the `v0.2.2` release you can! (Though keep in mind its only in **Alpha** at the moment)
+Do you want to extract text from an image or pdf? Well great, as of the `v0.2.3` release you can! (Though keep in mind its only in **Alpha** at the moment)
 
 Gowall supports a lot of providers `Local/Selfhosted & Cloud based` both `LLM-OCR based and traditional OCR based, or 
 even a mix of both` (think ocr with tesseract and correct grammar and other mistakes with llms either cloud or selfhosted). As always i like to give everyone all the choices possible, the choice is up to you.

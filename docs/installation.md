@@ -16,6 +16,8 @@ Choose the latest version of gowall. You should see a `.tar.gz` for your operati
 sudo cp gowall /usr/local/bin/
 ```
 
+Otherwise you can also just build the project yourself check the [section below](#build-from-source-cutting-edge)
+
 ### MacOS (currently behind on v0.2.0)
 
 A special thank you to `chenrui333` for making this possible.

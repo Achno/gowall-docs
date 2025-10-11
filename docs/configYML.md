@@ -11,6 +11,8 @@
    
    ColorCorrectionBackend : nn # Returns to the worse old color correction backend. See more info in the conversion section
 
+   EnvFilePath: "env/gowall/.env" # default is .gowall/.env , do not add /home/user. (its infered)
+
    themes:
   - name: "CustomThemeName"
     colors:

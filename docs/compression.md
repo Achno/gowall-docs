@@ -38,7 +38,7 @@ gowall compress
 
 ...
 
--m, --method Available methods: pngquant, losslesspng, lossllyjpeg, lossllyjpg, lossllywebp <---
+-m, --method Available methods: pngquant, losslesspng, lossyjpeg, lossyjpg, lossywebp <---
 
 ```
 

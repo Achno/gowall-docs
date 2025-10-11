@@ -6,7 +6,7 @@ sidebar_position: 1
 # Introduction
 
 
-Do you want to extract text from an image or pdf? Well great, as of the `v0.2.2` release you can!
+Do you want to extract text from an image or pdf? Well great, as of the `v0.2.2` release you can! (Though keep in mind its only in **Alpha** at the moment)
 
 Gowall supports a lot of providers `Local/Selfhosted & Cloud based` both `LLM-OCR based and traditional OCR based, or 
 even a mix of both` (think ocr with tesseract and correct grammar and other mistakes with llms either cloud or selfhosted). As always i like to give everyone all the choices possible, the choice is up to you.
@@ -43,8 +43,8 @@ If i want to OCR something like a receipt or a pdf containing very sensitive inf
 
 - [VLLM](https://github.com/vllm-project/vllm) see the gowall VLLM guide [here](./providers/vllm.md)
 - [Ollama](https://github.com/ollama/ollama) see the gowall Ollama guide [here](./providers/ollama.md)
-- [Docling](https://github.com/docling-project/docling) see the gowall Docling guide [here] (docling has both choices that's why it appears in 2 sections)
-- <u>OC</u> every selfhosted OpenAI compatible API endpoint, see the gowall OC guide [here](./providers/oc.md)
+- [Docling](https://github.com/docling-project/docling) see the gowall Docling guide [here](./providers/docling.md)
+- <u>OC</u> every OpenAI compatible API endpoint (selfhosted or not), see the gowall OC guide [here](./providers/oc.md)
 
 ### Cloud based
 

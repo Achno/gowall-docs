@@ -2,11 +2,14 @@
 
 ## Add a border
 
-    The below draws a border 5px thick with the color #5D3FD3
+    The below draws a border 5px thick with the color #5D3FD3, you can also specify the `radius` for 
+    rounded borders with the `-r` flag.
 
     ```bash
 gowall draw border ~/Pictures/img.png -c #5D3FD3 -b 5
 gowall draw border ~/Pictures/img.png -c #5D3FD3 -b 5 --output ~/NewFolder/newName.png
+
+gowall draw border ~/Pictures/img.png  -c #ffffff -r 30 -b 3
     ```
 ![border](./img/border.png)
 

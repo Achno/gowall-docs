@@ -11,19 +11,24 @@ as corner radius if you want round corners.
 I recommend using one of the 4 presets i made, though you can create your own custom tilt effect.
 
 ![tilt](./img/tilt.png)
+![tilt2](./img/tilt2.png)
+
 
 
 ```bash
-# Use a preset (recommended first try)
+gowall effects tilt ~/Pictures/lotm.webp 
+# Use a preset 
 gowall effects tilt ~/Pictures/lotm.webp -p p1
 # Use a preset and override the preset with some of your values, in this case the background gradient.
 gowall effects tilt ~/Pictures/lotm.webp -p p1 -b #000000 -e #282828
 # Create your own custom tilt
 gowall effects tilt ~/Pictures/lotm.webp -x -10 -y 15 -z 3 -s 0.6 -r 40
+# Set a custom Background image
+gowall effects tilt img.png  -i bg_img.jpg -x -15
 
 
-gowall effects tilt --dir ~/Pictures/Dir -p p1 --output ~/NewFolder
-gowall effects tilt --batch img1.png,img2.png -p p1 --output ~/NewFolder
+gowall effects tilt --dir ~/Pictures/Dir  --output ~/NewFolder
+gowall effects tilt --batch img1.png,img2.png  --output ~/NewFolder
 ```
 
 
@@ -46,6 +51,14 @@ You can start from a preset (`-p`) and then override anything you want with indi
 
     ```bash
   gowall effects tilt ~/Pictures/lotm.webp -b "#000000" -e "#000000"
+  ```
+  
+- **Custom Background Image**
+
+  Add a custom img via : `-i` ( or `--bg-image`) 
+  
+  ```bash
+  gowall effects tilt ~/Pictures/lotm.webp -i bg_img.png
   ```
 
    

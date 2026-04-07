@@ -1,4 +1,4 @@
-# Remove Background of an Image
+# Remove Background of an Image (Improvement)
 
 Remove the background of an image 
 
@@ -6,15 +6,14 @@ Remove the background of an image
 gowall bg ~/Pictures/img.png
 gowall bg ~/Pictures/img.png --output ~/NewFolder/img2.png
     ``` 
-You also have a bunch of options to play around with for more control.
 
+## Examples (New Models!)
 
-:::note
- This algorithm will be refined over time to give better results as i implemented it from scratch.
-:::
+#### New models `-m u2net/bria-rmbg` 
 
-## Examples
+![rmbg](./img/download.png)
 
+#### Old method `-m kmeans`
 ![remove background](./img/bg.png)
 
 ### ➤  `Batch conversion`

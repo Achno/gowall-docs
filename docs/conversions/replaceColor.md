@@ -15,6 +15,9 @@ Make sure to check out the [threshold option](./replaceColor.md/#threshold) too
 
 ![replace color example](./img/replaceColor.png)
 
+## New Algorithm 
+![replace color 2](./img/replace-clr(1).png)
+
 ## Threshold
 
 You can mess with the threshold that is accepted for a color to be replaced. To exaplin it simply, you see those petals in the image which look pink? Well you might think they are 1 color `#F4BDCC` but they might be different colors that are very close like `#F4BDCD`. By modifying the threshold value you can cover them as well.

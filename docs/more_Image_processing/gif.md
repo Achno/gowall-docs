@@ -3,12 +3,14 @@
 ➤ Creates a gif from images. You specify all the path to the images you want to create a gif for with `,` as the seperator. 
 If you dont specify any flags the defaults are set so it loops forever and it has a 2 second delay between frames.
 
+Support for previewing gifs in the kitty terminal has been enabled as of `v0.2.4`.
+
 ```bash
 gowall gif --batch ~/Pictures/NOBORDER.png,~/Pictures/girl.png 
 gowall gif --batch ~/Pictures/NOBORDER.png,~/Pictures/girl.png --output ~/Pictures/gowall/gifs/name.gif
 ```
 :::note 
-Do not leave any spaces between the path to the images.The `-b` flag is necessary 
+Do not leave any spaces between the path to the images.The `--batch` flag is necessary 
 :::
 
 ![gif](./img/gif.png)

@@ -1,5 +1,8 @@
 # Use gowall in Scripts
 
+Checkout the [global flags](./global_flags.md) section for more info on the flags that can be used in scripts.
+The `--yes,--preview` flags are particularly useful in scripts.
+
 ### Preview all of the 25 built in Themes
 ----
 

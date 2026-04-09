@@ -3,17 +3,19 @@ slug: /
 sidebar_position: 1
 ---
 
-# Introduction (Important)
+# Introduction 
 
 ## What is gowall?
 
-Gowall is a CLI and started as a way to convert images ( specifically wallpapers ) to your favourite color scheme ex. catppuccin,everforest,solarized ...  Since then, Gowall has evolved significantly, and I’ve transformed it into a versatile Swiss Army knife for a variety of cool image processing tasks.
+Gowall is a CLI and started as a way to convert images ( specifically wallpapers ) to your favourite color scheme ex. catppuccin,everforest,solarized ...  Since then, Gowall has evolved significantly, and I’ve transformed it into a versatile Swiss Army knife for a variety of cool image processing tasks and i'm trying to make it the one image processing tool to rule them all.
 
 
 
 ## Gowall's Features explained quickly
 
-❗ Gowall although a CLI has an `Terminal Image preview` feature, you can see the next section for more information.
+Gowall supports `.png` `jpeg` `jpg` `webp` as well as `.avif` as of `v0.2.4`.
+
+❗ Gowall although a CLI has an `Terminal Image preview` feature, you can see the [next section](./intro.md#image-preview) for more information.
 
 - Convert Wallpaper's theme 👾 – Recolor an image to match your favorite + (Custom) themes (Catppuccin...)
 - AI Image Upscaling  - Increase the resolution of the image while preserving or improving its quality.

@@ -2,16 +2,22 @@
 
 ## Add a border
 
-    The below draws a border 5px thick with the color #5D3FD3, you can also specify the `radius` for 
-    rounded borders with the `-r` flag.
+    The below draws a border 5px thick with the color #5D3FD3, you can also specify the `radius` to round the borders. Check the available flags below.
 
-    ```bash
+```bash
 gowall draw border ~/Pictures/img.png -c #5D3FD3 -b 5
 gowall draw border ~/Pictures/img.png -c #5D3FD3 -b 5 --output ~/NewFolder/newName.png
 
 gowall draw border ~/Pictures/img.png  -c #ffffff -r 30 -b 3
     ```
 ![border](./img/border.png)
+
+### ➤ **Available flags**
+
+- `-c` the color of the border ex. `#5D3FD3`
+- `-b` the thickness of the border ex. `5`
+- `-r` the radius of the border ex. `30`
+
 
 ##### ➤  `Batch conversion`
     ```bash
@@ -57,12 +63,6 @@ gowall draw grid --batch img.png,img2.png --output ~/NewFolder
 gowall draw grid --dir ~/Pictures/Dir 
 gowall draw grid --dir ~/Pictures/Dir --output ~/NewFolder
     ```
-
-
-<br />
-## Create Solid color & Gradient Images
-
-Under construction...🔨 (Next update?) 
 
 <br />
 ## Create Images out of Shapes

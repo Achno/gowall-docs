@@ -2,7 +2,7 @@
 
 ### ➤ `Single conversion`
 
-     Change the format of an image, the available formats are `png` `jpeg` `jpg` `webp`  
+     Change the format of an image, the available formats are `png` `jpeg` `jpg` `webp`  `avif`
      You can also rename and convert a single image without the `-f` flag (second example)
 
     ```bash

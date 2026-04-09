@@ -125,7 +125,7 @@ const config = {
       },
       announcementBar: {
         id: 'release',
-        content: '🎉 Gowall v0.2.3 is out! New Features include : OCR & Image Compression check it out.',
+        content: '🎉 Gowall v0.2.4 is out! New Features include : Color theory, SOTA img background removal, and more!',
         backgroundColor: '#242526',
         textColor: '#ffffff',
       },

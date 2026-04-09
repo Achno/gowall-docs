@@ -21,17 +21,19 @@ Gowall supports `.png` `jpeg` `jpg` `webp` as well as `.avif` as of `v0.2.4`.
 - AI Image Upscaling  - Increase the resolution of the image while preserving or improving its quality.
 - Image compression - Reduce the size of png,jpeg,jpg,webp images.
 - OCR (Optical Character Recognition) - Extract text from images and pdfs', supporting a lot of providers.
+- Color theory utilities - 
 - Support for Unix pipes/redirection - Read from `stdin` and write to `stdout`
 - Convert Icon's theme (svg,ico) - Recolor your icons to match a theme
 - Image to pixel art - Transforms your image to the typical blocky appearance of pixel art.
 - Replace a specific color in an image - pretty self explanatory.
 - Create a gif from images - use the images as frames and specify a delay and the number of loops.
+- Stack images - stack multiple images in a grid, vertically or horizontally.
 - Extact color palette - Extracts all the dominant colors in an image (like pywal)
 - Change Image format - Ex. change format from `.webp` to `.png`.
 - Invert image colors - pretty self explanatory.
 - Draw on the Image - Draw borders,grids on the image
 - Remove the background of the image - pretty self explanatory.
-- Effects - Mirror,Flip,Grayscale,change brightness and more to come!
+- Effects - Mirror,Flip,Grayscale,change brightness, 3D Tilt the image and more to come!
 - Daily wallpapers - Explore community-voted wallpapers that reset daily.
 
 ## Image preview

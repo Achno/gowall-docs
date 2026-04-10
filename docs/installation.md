@@ -18,19 +18,23 @@ sudo cp gowall /usr/local/bin/
 
 Otherwise you can also just build the project yourself check the [section below](#build-from-source-cutting-edge)
 
-### MacOS (currently behind on v0.2.0)
+### MacOS (Maintainer : cho-m)
 
-A special thank you to `chenrui333` for making this possible.
+A massive thank you to the legend himself `cho-m` who fixed the `brew` install for MacOS.
+It was stuck in version `0.2.0` for a long time.
 ```
 brew install gowall
 ```
 
-### Arch linux - AUR
+### Arch linux - AUR (Maintainer : me Achno)
 
 ```bash
 yay -S gowall
 ```
-### NixOS - ( Maintainer : [Emily Trau](https://github.com/emilytrau) )
+### NixOS - (Maintainer(s) : Emily Trau, Crem, Fran Cirka)
+
+Thank you to my lovely contributors for maintaining the NixOS packaging.
+Maintainers github handles : `@ItsCrem`, `@emilytrau`, `@FKouhai`
 
 ```
   environment.systemPackages = [
@@ -39,14 +43,20 @@ yay -S gowall
 ```
 More installation options : [here](https://search.nixos.org/packages?channel=24.05&from=0&size=50&sort=relevance&type=packages&query=gowall)
 
-### Fedora - COPR
+### Fedora - COPR (Maintainer : me Achno)
 
 ```bash
 sudo dnf copr enable achno/gowall
 sudo dnf install gowall
 ```
 
-### Void Linux - XBPS-SRC ( Maintainer : [elbachir-one](https://github.com/elbachir-one/)  ) 
+### FreeBSD - pkg (Maintainer : nxjoseph)
+
+Follow the instructions on [freshports](https://www.freshports.org/graphics/gowall)
+
+Props to `nxjoseph` for handling FreeBSD :)
+
+### Void Linux - XBPS-SRC (Maintainer : elbachir-one stuck on `v0.2.1`) 
 
 Assuming you have [void-packages](https://github.com/void-linux/void-packages)
 
